@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/fondo">
+
+    <!-- Grupo de CheckBox para género -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp">
+
+        <CheckBox
+            android:id="@+id/checkBoxHombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hombre"
+            android:textColor="#90703E"
+            android:layout_marginEnd="20dp"
+            android:buttonTint="#90703E"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxMujer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mujer"
+            android:textColor="#90703E"
+            android:buttonTint="#90703E"/>
+    </LinearLayout>
+
+    <!-- Campo para el peso -->
+    <EditText
+        android:id="@+id/etPeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Peso (kg)"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:textColorHint="#90703E"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/edit_text_border"/>
+
+    <!-- Campo para la altura -->
+    <EditText
+        android:id="@+id/etAltura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Altura (cm)"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp"
+        android:textColorHint="#90703E"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/edit_text_border"/>
+
+    <!-- Botón calcular -->
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular IMC"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#90703E"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Vista de resultados -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/edit_text_border"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <!-- Resultado actual -->
+            <TextView
+                android:id="@+id/tvResultadoActual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#90703E"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Interpretación del IMC -->
+            <TextView
+                android:id="@+id/tvInterpretacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textColor="#90703E"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Lista de resultados anteriores -->
+            <TextView
+                android:id="@+id/tvHistorialResultados"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#90703E"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Botón IMC anteriores -->
+    <Button
+        android:id="@+id/btnHistorial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IMC Anteriores"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#90703E"
+        android:padding="12dp"/>
+
+</LinearLayout>

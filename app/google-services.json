@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "93902276617",
+    "firebase_url": "https://nutreplus-3d17e-default-rtdb.firebaseio.com",
+    "project_id": "nutreplus-3d17e",
+    "storage_bucket": "nutreplus-3d17e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:93902276617:android:ca826bc0f498b1e36f10d8",
+        "android_client_info": {
+          "package_name": "alexander.nutreplusv2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA687iIzWf9vRRFlcRxBEHCgwhunD6gsb0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:93902276617:android:cfbc2baaf29a38716f10d8",
+        "android_client_info": {
+          "package_name": "skibidimamei.nutreplus"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA687iIzWf9vRRFlcRxBEHCgwhunD6gsb0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
